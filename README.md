@@ -17,7 +17,7 @@
    if LCD_font_styles[int(code*7+y)][x] == "1":
    に変える
    ④demo_LCD_font.pyに戻り、34行目の％のところを自分の作った文字数-1に変える
-   また大量に文字を作った場合には、ウィンドウの大きさを変えないと全部映らないため、17行目の値を大きくする
+   また大量に文字を作った場合には、ウィンドウの大きさを変えないと全部映らないため、17行目の値を大きくする(1500くらいまでがおすすめ)
 ![2025-01-16154917-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/0a5dbc7b-a15f-4aaa-b718-6cb85f919cb7)
 
  - demo_freetype.py: pygame.freetypeでテキスト表示。（新しい方式）
