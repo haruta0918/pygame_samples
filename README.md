@@ -35,3 +35,4 @@
  - lcd_font_pg.py: LCD_fontクラス
  - demo_LCD_font.pyのためのファイル
  - 表示するときのフォントのttfファイルを参照をしたりするファイル
+   ＜demo_LCD_font.pyやdemo_03.pyのマインクラフトでの表示＞
