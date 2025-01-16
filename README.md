@@ -31,6 +31,7 @@
 
  - demo_openmoji.py: オープンソースの絵文字、openmojiのデモ。キー操作のデモ。
  - seven_seg_pg.py: Seven_segクラス
+ - demo_02.pyやdemo_03.py用のファイル
  - lcd_font_pg.py: LCD_fontクラス
  - demo_LCD_font.pyのためのファイル
  - 表示するときのフォントのttfファイルを参照をしたりするファイル
