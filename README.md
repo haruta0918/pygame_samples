@@ -2,7 +2,11 @@
 
  - demo_01.py: pygameの超簡単なデモ。
  - demo_02.py: 7セグのシミュレーション、各セグメントを2ブロックで構成。Seven_segクラス使用。
+ -  ![スクリーンショット 2025-01-16 182647](https://github.com/user-attachments/assets/01e49458-5eaf-4e9f-a5c4-5ff23854cd5c)
+ - demo_03.py: LCD_fontsを使用した、時計(時間のほかに、年月日を表示)
+ - ![スクリーンショット 2025-01-16 182742](https://github.com/user-attachments/assets/3ae9dd7e-4fff-4466-adef-4d31b9a83a8d)
  - demo_LCD_font_01.py: 5x7のLCDフォント制作用。LCD_fontクラス使用。
+ -
  - demo_LCD_font.py: 5x7のLCDフォント、完成版。
  - やり方
  - ①https://github.com/Naohiro2g/dotmatrix_fontからオリジナルフォントを作る
