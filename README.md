@@ -8,8 +8,7 @@
  - demo_LCD_font_01.py: 5x7のLCDフォント制作用。LCD_fontクラス使用。 -
  - demo_LCD_font.py: 5x7のLCDフォント、完成版。
  - やり方
- - ①https://github.com/Naohiro2g/dotmatrix_font
- - からオリジナルフォントを作る
+ - ①https://github.com/Naohiro2g/dotmatrix_font    からオリジナルフォントを作る
  - ②fontsの中に出来上がったfont.txtを入れる
  - ③LCD_font_pg.pyの最初の0,1,2を表示させているものを消して、
  - with open("fonts/font.txt", encoding="utf-8") as f:
