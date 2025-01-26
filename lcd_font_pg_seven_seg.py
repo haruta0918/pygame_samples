@@ -5,7 +5,7 @@
 import pygame
 from pygame.locals import Rect
 
-with open("fonts/font.txt", encoding="utf-8") as f:
+with open("fonts/font_sevnseg.txt", encoding="utf-8") as f:
         LCD_font_styles = f.read().split('\n')
 
 DARK_GRAY = (40, 40, 40)

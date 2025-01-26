@@ -14,7 +14,7 @@ CYAN = (120, 120, 250)
 YELLOW = (250, 250, 20)
 WHITE = (250, 250, 250)
 
-WINDOW_WIDTH = 320
+WINDOW_WIDTH = 1500
 WINDOW_HEIGHT = 240
 
 pygame.init()
@@ -26,12 +26,12 @@ clock = pygame.time.Clock()
 font1 = pygame.freetype.Font("fonts/natumemozi.ttf", 48)
 
 lcd1 = LCD_font(screen)
-lcd1.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=GREEN, COLOR_OFF=GRAY)
+lcd1.init_col(BLOCK_SIZE=4, BLOCK_INTV=8, COLOR_ON=GREEN, COLOR_OFF=GRAY)
 lcd1.init_row(X_ORG=8, Y_ORG=8, COL_INTV=6)
 
 
 def LCD_display(x, y):
-    code = int((x / 8) % 3)
+    code = int((x / 8) % 95)
     text1, rect1 = font1.render(str(code), WHITE)
     rect1.center = (x, y)
     screen.blit(text1, rect1)

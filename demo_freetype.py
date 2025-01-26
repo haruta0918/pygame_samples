@@ -33,7 +33,7 @@ font1 = pygame.freetype.Font('fonts/natumemozi.ttf', 18)
 font2 = pygame.freetype.Font('fonts/hack-fonts/Hack-Bold.ttf', 24)
 
 screen.fill((250, 180, 250))
-message1 = 'こんにちは、私の名前はナツメです。'
+message1 = 'Letus Play Lunar-Lander game!!'
 
 
 # text_surfaceにrenderしてから、blitする方法
