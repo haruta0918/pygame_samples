@@ -7,7 +7,7 @@
  - ![スクリーンショット 2025-01-16 182742](https://github.com/user-attachments/assets/3ae9dd7e-4fff-4466-adef-4d31b9a83a8d)
  - demo_LCD_font_01.py: 5x7のLCDフォント制作用。LCD_fontクラス使用。 -
  - demo_LCD_font.py: 5x7のLCDフォント、完成版。
- - やり方
+ - どうやってやったか
  - ①https://github.com/Naohiro2g/dotmatrix_font    からオリジナルフォントを作る
  - ②fontsの中に出来上がったfont.txtを入れる
  - ③LCD_font_pg.pyの最初の0,1,2を表示させているものを消して、
@@ -22,7 +22,7 @@
 ![2025-01-16154917-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/0a5dbc7b-a15f-4aaa-b718-6cb85f919cb7)
 
  - demo_freetype.py: pygame.freetypeでテキスト表示。（新しい方式）
- - やり方
+ - どうやってやったか
  - <フォントを変えたいとき>
  - ・fontsフォルダーの中に、自分の使いたいフォントのttfファイルを入れて、32,33行目にある、メッセージ1とメッセージ2のフォントを指定しているところで、fonts/○○(ファイル名)○○(文字の大きさ指定)に変える
  - <内容を変えたいとき>
