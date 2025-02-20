@@ -38,6 +38,7 @@
  - 表示するときのフォントのttfファイルを参照をしたりするファイル
  - ＜demo_LCD_font.pyやdemo_03.pyのマインクラフトでの表示＞
  - 時計バージョン
+ - ![無題の動画 ‐ Clipchampで作成](https://github.com/user-attachments/assets/faab16d7-5630-4983-91f1-8065472dc930)
  - ①マインクラフトで表示するのは数字だけのため、使うフォントを
  - with open("fonts/font_sevnseg.txt", encoding="utf-8") as f:
         LCD_font_styles = f.read().split('\n')
@@ -111,6 +112,8 @@
  -  で消している
 
  -  文字バージョン
+ -  ![Uploading スクリーンショット 2025-02-20 205032.png…]()
+
  -  今のままだと表示する文字が数字のみなので、with open のところをオリジナルのひらがなファイルを作るか、LCDfontで使ったfont_txtに変え、必要最低限のコードだけにするために、
  -  -  BLOCKON=param.SMOOTH_QUATZ
 X=47
