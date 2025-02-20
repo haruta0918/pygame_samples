@@ -41,13 +41,13 @@
  - ①マインクラフトで表示するのは数字だけのため、使うフォントを
  - with open("fonts/font_sevnseg.txt", encoding="utf-8") as f:
         LCD_font_styles = f.read().split('\n')
-   で,sevnseg.txtにする
-   ②import sys
+   -で,sevnseg.txtにする
+  - ②import sys
    from mcje.minecraft import Minecraft
 import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
-がマイクラリモコンに必要なため、すべて、1番最初ところに入れる
-③mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+-がマイクラリモコンに必要なため、すべて、1番最初ところに入れる
+-③mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
 if ("Error" in result):
     sys.exit(result)
@@ -72,8 +72,8 @@ for y in range(11):
             for x in range(51):
                 X+=1
                 mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)
- で、背景を作り、
- display1.update_col(col=0, code=dt_now.hour // 10)
+-で、背景を作り、
+ -display1.update_col(col=0, code=dt_now.hour // 10)
         display1.update_col(col=1, code=dt_now.hour % 10)
         display1.update_col(col=2, code=10)
         display1.update_col(col=3, code=dt_now.minute // 10)
@@ -81,7 +81,10 @@ for y in range(11):
         display1.update_col(col=5, code=10)
         display1.update_col(col=6, code=dt_now.second // 10)
         display1.update_col(col=7, code=dt_now.second % 10)
-        で時、分、秒が更新されているので、更新したものを常に出せるように、
+        
+   
+
+ -で消している で時、分、秒が更新されているので、更新したものを常に出せるように、
         Y=120
         X=-5
         print(code)
@@ -107,10 +110,9 @@ for y in range(11):
                     X=-48
                     for x in range(49):
                         X+=1
-                        mc.setBlock(X, Y,-7,param.AIR) で消している
-   
-
- - 文字バージョン
+                        mc.setBlock(X, Y,-7,param.AIR)
+ -  で消している
+ -  文字バージョン
  - 今のままだと表示する文字が数字のみなので、with open のところをオリジナルのひらがなファイルを作るか、LCDfontで使ったfont_txtに変え、必要最低限のコードだけにするために、
  - BLOCKON=param.SMOOTH_QUATZ
 X=47
