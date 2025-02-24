@@ -79,8 +79,8 @@
    mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)
  - で、背景を作り、
  - ```
-      display1.update_col(col=0, code=dt_now.hour // 10)
-   display1.update_col(col=1, code=dt_now.hour % 10)
+    display1.update_col(col=0, code=dt_now.hour // 10)
+    display1.update_col(col=1, code=dt_now.hour % 10)
     display1.update_col(col=2, code=10)
     display1.update_col(col=3, code=dt_now.minute // 10)
     display1.update_col(col=4, code=dt_now.minute % 10)
