@@ -83,7 +83,7 @@
     display1.update_col(col=5, code=10)
     display1.update_col(col=6, code=dt_now.second // 10)
      display1.update_col(col=7, code=dt_now.second % 10)
- - ```
+  
 
    
  -    で消している で時、分、秒が更新されているので、更新したものを常に出せるように、
