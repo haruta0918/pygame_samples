@@ -141,8 +141,8 @@ for y in range(7):
  - ```
    code=
  - のところと、インポートやフォントを開いている上17行、mcの定義をしている
-   ```
-mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+
+```mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
 if ("Error" in result):
     sys.exit(result)
