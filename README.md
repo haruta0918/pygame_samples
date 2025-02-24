@@ -143,7 +143,7 @@ for y in range(7):
  - のところと、インポートやフォントを開いている上17行、mcの定義をしている
  - ```
    mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
-　 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
+    result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
    if ("Error" in result):
       sys.exit(result)
    else:
@@ -151,6 +151,7 @@ for y in range(7):
       mc.postToChat('kadai #ラスト  文字表示')
    lcd1 = LCD_font(mc)
 
+　
 
 
  - のあたりだけ残して、他をすべて消す
