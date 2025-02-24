@@ -74,14 +74,14 @@
  -  X+=1
  -  mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)
  - で、背景を作り、
- - display1.update_col(col=0, code=dt_now.hour // 10)
- - display1.update_col(col=1, code=dt_now.hour % 10)
- -  display1.update_col(col=2, code=10)
- -  display1.update_col(col=3, code=dt_now.minute // 10)
- -  display1.update_col(col=4, code=dt_now.minute % 10)
- -  display1.update_col(col=5, code=10)
- -  display1.update_col(col=6, code=dt_now.second // 10)
- -   display1.update_col(col=7, code=dt_now.second % 10)
+   '''display1.update_col(col=0, code=dt_now.hour // 10)
+   display1.update_col(col=1, code=dt_now.hour % 10)
+    display1.update_col(col=2, code=10)
+    display1.update_col(col=3, code=dt_now.minute // 10)
+    display1.update_col(col=4, code=dt_now.minute % 10)
+    display1.update_col(col=5, code=10)
+    display1.update_col(col=6, code=dt_now.second // 10)
+     display1.update_col(col=7, code=dt_now.second % 10)'''
  -    で消している で時、分、秒が更新されているので、更新したものを常に出せるように、
  -    Y=120
         X=-5
