@@ -141,8 +141,8 @@ for y in range(7):
  - ```
    code=
  - のところと、インポートやフォントを開いている上17行、mcの定義をしている
-
-```mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+ - ```
+   mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
 if ("Error" in result):
     sys.exit(result)
@@ -150,6 +150,8 @@ else:
     print(result)
     mc.postToChat('kadai #ラスト  文字表示')
 lcd1 = LCD_font(mc)
+
+
 
  - のあたりだけ残して、他をすべて消す
  -  code指定と、文字の表示するところの座標を変えれば、文章も作ることができる
