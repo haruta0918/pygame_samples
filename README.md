@@ -44,47 +44,56 @@
         LCD_font_styles = f.read().split('\n')
  - で,sevnseg.txtにする
  - ②import sys
- - from mcje.minecraft import Minecraft
- - import param_MCJE as param
- - from param_MCJE import PLAYER_ORIGIN as po
+ -```
+ from mcje.minecraft import Minecraft
+  import param_MCJE as param
+  from param_MCJE import PLAYER_ORIGIN as po
  - がマイクラリモコンに必要なため、すべて、1番最初ところに入れる
- - ③mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
- - result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
- - if ("Error" in result):
- - sys.exit(result)
- - else:
- - print(result)
- - mc.postToChat('kadai #8  時計(完成)')
+ - ③
+ - ```
+   mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+   result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
+   if ("Error" in result):
+   sys.exit(result)
+   else:
+   print(result)
+   mc.postToChat('kadai #8  時計(完成)')
  - を入れることで、マイクラリモコン(mc)の定義や、チャット欄にkadai #8  時計(完成)が表示される
  - その後、
- - X=-48
- - Y=121
- - for y in range(9):
- -      Y-=1
- -  　　X=-48
- -  for x in range(49):
- -   X+=1
- -    mc.setBlock(X, Y,-8,param.SMOOTH_QUATZ)
- -    X=-49
- -    Y=122
- -    for y in range(11):
- -    Y-=1
- -     X=-49
- - for x in range(51):
- -  X+=1
- -  mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)
+ -```
+  X=-48
+  Y=121
+  for y in range(9):
+       Y-=1
+  　　X=-48
+   for x in range(49):
+    X+=1
+     mc.setBlock(X, Y,-8,param.SMOOTH_QUATZ)
+     X=-49
+     Y=122
+     for y in range(11):
+     Y-=1
+      X=-49
+  for x in range(51):
+   X+=1
+   mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)
  - で、背景を作り、
- - display1.update_col(col=0, code=dt_now.hour // 10)
- - display1.update_col(col=1, code=dt_now.hour % 10)
- -  display1.update_col(col=2, code=10)
- -  display1.update_col(col=3, code=dt_now.minute // 10)
- -  display1.update_col(col=4, code=dt_now.minute % 10)
- -  display1.update_col(col=5, code=10)
- -  display1.update_col(col=6, code=dt_now.second // 10)
- -   display1.update_col(col=7, code=dt_now.second % 10)
+ - ```
+    display1.update_col(col=0, code=dt_now.hour // 10)
+    display1.update_col(col=1, code=dt_now.hour % 10)
+    display1.update_col(col=2, code=10)
+    display1.update_col(col=3, code=dt_now.minute // 10)
+    display1.update_col(col=4, code=dt_now.minute % 10)
+    display1.update_col(col=5, code=10)
+    display1.update_col(col=6, code=dt_now.second // 10)
+     display1.update_col(col=7, code=dt_now.second % 10)
+  
+
+   
  -    で消している で時、分、秒が更新されているので、更新したものを常に出せるように、
- -    Y=120
-        X=-5
+ -    ```
+      Y=120
+      X=-5
         print(code)
         # 秒
         code=dt_now.second % 10
@@ -101,9 +110,10 @@
                 else:
                     BLOCK= BLOCKOFF
  -    これは、秒数の一の位だけだが、これを、他すべてでも行い、毎回変更できるように、すべての範囲を
- -    X=-48
-        Y=121
-        for y in range(9):
+ -  ```
+      X=-48
+      Y=121
+   for y in range(9):
                     Y-=1
                     X=-48
                     for x in range(49):
@@ -112,10 +122,11 @@
  -  で消している
 
  -  文字バージョン
- -  ![Uploading スクリーンショット 2025-02-20 205032.png…]()
 
  -  今のままだと表示する文字が数字のみなので、with open のところをオリジナルのひらがなファイルを作るか、LCDfontで使ったfont_txtに変え、必要最低限のコードだけにするために、
- -  -  BLOCKON=param.SMOOTH_QUATZ
+ -  ```
+ 
+BLOCKON=param.SMOOTH_QUATZ
 X=47
 Y=120
 for y in range(7):
@@ -127,18 +138,31 @@ for y in range(7):
                 BLOCK= BLOCKON
                 mc.setBlock(X, Y,-7,BLOCK)
  -  みたいに、文字を表示する部分と、表示する文字を指定する
- - code=
+ - ```
+   code=
  - のところと、インポートやフォントを開いている上17行、mcの定義をしている
- - mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
-result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
-if ("Error" in result):
-    sys.exit(result)
-else:
-    print(result)
-    mc.postToChat('kadai #ラスト  文字表示')
-lcd1 = LCD_font(mc)
+ - ```
+   mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+    result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
+   if ("Error" in result):
+      sys.exit(result)
+   else:
+      print(result)
+      mc.postToChat('kadai #ラスト  文字表示')
+   lcd1 = LCD_font(mc)
+
+　
+
+
  - のあたりだけ残して、他をすべて消す
- - code指定と、文字の表示するところの座標を変えれば、文章も作ることができる
+ -  code指定と、文字の表示するところの座標を変えれば、文章も作ることができる
+ -  demo_03 _minecraft_v_new.py
+ -   まだ未完成
+ 
+
+
+
+ 
 
  
    
