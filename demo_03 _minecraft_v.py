@@ -54,23 +54,23 @@ lcd1 = LCD_font(mc)
 def LCD_display(x):
     code = int((x / 8) % 9)
     lcd1.update_col(col=1, code=code)
-X=-48
-Y=121
+Z=-24
+Y=148
 for y in range(9):
             Y-=1
-            X=-48
+            Z=-24
             for x in range(49):
-                X+=1
-                mc.setBlock(X, Y,-8,param.SMOOTH_QUATZ) 
+                Z+=1
+                mc.setBlock(48, Y,Z,param.SMOOTH_QUATZ) 
 
-X=-49
-Y=122
+Z=-25
+Y=149
 for y in range(11):
             Y-=1
-            X=-49
+            Z=-25
             for x in range(51):
-                X+=1
-                mc.setBlock(X, Y,-7,param.DIAMOND_BLOCK)   
+                Z+=1
+                mc.setBlock(47, Y,Z,param.DIAMOND_BLOCK)   
     
 # infinite loop top ----
 running = True
@@ -95,32 +95,32 @@ while running:
         display1.update_col(col=5, code=10)
         display1.update_col(col=6, code=dt_now.second // 10)
         display1.update_col(col=7, code=dt_now.second % 10)
-        X=-48
-        Y=121
+        Z=-24
+        Y=148
         for y in range(9):
                     Y-=1
-                    X=-48
+                    Z=-24
                     for x in range(49):
-                        X+=1
-                        mc.setBlock(X, Y,-7,param.AIR) 
+                        Z+=1
+                        mc.setBlock(47, Y,Z,param.AIR) 
         BLOCKOFF=param.AIR
         BLOCKON=param.SEA_LANTERN_BLOCK
         BLOCK_INTV=1
-        Y=120
-        X=-5
+        Y=146
+        Z=19
         print(code)
         # 秒
         code=dt_now.second % 10
-        X=-5
-        Y=120
+        Z=19
+        Y=147
         for y in range(7):
             Y-=1
-            X=-5
+            Z=19
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -128,16 +128,16 @@ while running:
                 
                 # ドットを描く
         code=dt_now.second // 10
-        X=-11
-        Y=120
+        Z=13
+        Y=147
         for y in range(7):
             Y-=1
-            X=-11
+            Z=13
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -145,30 +145,30 @@ while running:
                 
                 # ドットを描く
         code=10
-        X=-17
-        Y=120
+        Z=7
+        Y=147
         for y in range(7):
             Y-=1
-            X=-17
+            Z=7
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                     # 分 
         code=dt_now.minute % 10
-        X=-23
-        Y=120
+        Z=1
+        Y=147
         for y in range(7):
             Y-=1
-            X=-23
+            Z=1
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -176,16 +176,16 @@ while running:
                 
                 # ドットを描く
         code=dt_now.minute // 10  
-        X=-29
-        Y=120
+        Z=-5
+        Y=147
         for y in range(7):
             Y-=1
-            X=-29
+            Z=-5
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -193,30 +193,30 @@ while running:
                 
                 # ドットを描く
         code=10
-        X=-35
-        Y=120
+        Z=-11
+        Y=147
         for y in range(7):
             Y-=1
-            X=-35
+            Z=-11
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                     # 時
         code=dt_now.hour % 10 
-        X=-41
-        Y=120
+        Z=-17
+        Y=147
         for y in range(7):
             Y-=1
-            X=-41
+            Z=-17
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -224,16 +224,16 @@ while running:
                 
                 # ドットを描く
         code=dt_now.hour // 10
-        X=-47
-        Y=120
+        Z=-23
+        Y=147
         for y in range(7):
             Y-=1
-            X=-47
+            Z=-23
             for x in range(5):
-                X+=1
+                Z+=1
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     BLOCK= BLOCKON
-                    mc.setBlock(X, Y,-7,BLOCK)   
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
                 # 桁の原点
@@ -251,7 +251,7 @@ while running:
         display2.update_col(col=6, code=11)
         display2.update_col(col=7, code=int(str(dt_now.day)[0]))
         display2.update_col(col=8, code=int(str(dt_now.day)[1]))  
-        X+=1
+        Z+=1
         dt_now = datetime.now()
         time_now = (dt_now.hour * 10000
                     + dt_now.minute * 100
@@ -262,5 +262,3 @@ while running:
         clock.tick(FPS)  # FPS, Frame Per Second
     screen.fill(DARK_GRAY)
 # infinit loop bottom ----
-
-pygame.qui
