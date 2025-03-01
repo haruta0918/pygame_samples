@@ -14,7 +14,7 @@ import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
 with open("fonts/font.txt", encoding="utf-8") as f:
         LCD_font_styles = f.read().split('\n')
-disp_msg = "HHHHHHHH!!"
+disp_msg = "2DJMV389"
 i = 0
         
 
@@ -42,9 +42,9 @@ else:
     print(result)
     mc.postToChat('kadai #ラスト  文字表示')
 lcd1 = LCD_font(mc)
-Z=-7
-Y=90
-X=-40
+Z=45
+Y=133
+X=50
 Yorizin=Y
 Zorizin=Z
 Xorizin=X
@@ -61,12 +61,11 @@ for i in range (len(disp_msg)):
     Z=Zorizin
     X=Xorizin
     Y=Yorizin
-    print("あ")   
     for y in range(7):
         Y-=1
         Z=Zorizin
         for x in range(5):
-            Z+=1
+            Z-=1
             if LCD_font_styles[int(code*7+y)][x] == "1":
                 BLOCK = BLOCKON
                 mc.setBlock(X, Y,Z,BLOCK)
@@ -78,7 +77,7 @@ for i in range (len(disp_msg)):
                 # ドットの原点座標
                 
                 # ドットを描く
-    Zorizin+=9
+    Zorizin-=9
     
     
                 
