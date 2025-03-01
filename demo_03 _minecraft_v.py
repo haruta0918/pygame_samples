@@ -71,6 +71,12 @@ for y in range(11):
             for x in range(51):
                 Z+=1
                 mc.setBlock(47, Y,Z,param.DIAMOND_BLOCK)   
+for y in range(9):
+    Y-=1
+    Z=-24
+    for x in range(49):
+        Z+=1
+        mc.setBlock(47, Y,Z,param.AIR) 
     
 # infinite loop top ----
 running = True
@@ -97,12 +103,6 @@ while running:
         display1.update_col(col=7, code=dt_now.second % 10)
         Z=-24
         Y=148
-        for y in range(9):
-                    Y-=1
-                    Z=-24
-                    for x in range(49):
-                        Z+=1
-                        mc.setBlock(47, Y,Z,param.AIR) 
         BLOCKOFF=param.AIR
         BLOCKON=param.SEA_LANTERN_BLOCK
         BLOCK_INTV=1
@@ -123,6 +123,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -140,6 +141,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)   
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -157,7 +159,8 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
-                    # 分 
+                    mc.setBlock(47, Y,Z,BLOCK)      
+# 分 
         code=dt_now.minute % 10
         Z=1
         Y=147
@@ -171,6 +174,8 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
+                    
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -188,6 +193,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -205,6 +211,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
                     # 時
         code=dt_now.hour % 10 
         Z=-17
@@ -219,6 +226,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -236,6 +244,7 @@ while running:
                     mc.setBlock(47, Y,Z,BLOCK)   
                 else:
                     BLOCK= BLOCKOFF
+                    mc.setBlock(47, Y,Z,BLOCK)
                 # 桁の原点
                 # ドットの原点座標
                 
@@ -250,7 +259,7 @@ while running:
         display2.update_col(col=5, code=int(str(dt_now.month)[0]))
         display2.update_col(col=6, code=11)
         display2.update_col(col=7, code=int(str(dt_now.day)[0]))
-        display2.update_col(col=8, code=int(str(dt_now.day)[1]))  
+        # display2.update_col(col=8, code=int(str(dt_now.day)[1]))  
         Z+=1
         dt_now = datetime.now()
         time_now = (dt_now.hour * 10000
