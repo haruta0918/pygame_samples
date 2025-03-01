@@ -157,10 +157,9 @@ for y in range(7):
  - のあたりだけ残して、他をすべて消す
  -  code指定と、文字の表示するところの座標を変えれば、文章も作ることができる
  -
- -  demo_03 _minecraft_v_newコピー.py
- -ttfファイルを、そのまま表示
- -   まだ未完成(今年完成予定)
- 
+ -  demo_03 _minecraft_v_new.py
+ -  自由に文字を表示させる
+ -  '''msg=(ord(disp_msg[i]))''' 
 
 
 
