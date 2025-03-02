@@ -60,10 +60,12 @@
  -  ただ、今のままだと表示する文字が数字のみなので、with open のところをオリジナルのひらがなファイルを作るか、LCDfontで使ったfont_txtに変え、時刻をcodeにしているところなどがいらない
  -  そのため、必要最低限の、インポート系、mc定義、setblockと一応postChatのところだけ残す
  -  このままだと、codeが何も指定されていないので、
+ 
  -              disp_msg = "2DJMV389"
- -              i = 0
- -              msg=(ord(disp_msg[i]))
- -              code = msg
+               i = 0
+               msg=(ord(disp_msg[i]))
+               code = msg
+ 
  -  のように、文字をASCIIに変換して、それをcodeにすることで、マイクラでも表示したい文字が表示できる
  -  ただし、このままだと、codeに一番最初の文字しか、入らないので、
  -  最初にcount=1にして、繰り返す回数をcountにすることで、それぞれにあった、ASCIIのcodeになり、最終的に、
