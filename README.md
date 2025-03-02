@@ -96,6 +96,7 @@ for i in range (len(disp_msg)):
                 BLOCK =BLOCKOFF
                 mc.setBlock(X, Y,Z,BLOCK)
      orizin-=9
+   '''
 
     
  
