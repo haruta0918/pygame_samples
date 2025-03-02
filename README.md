@@ -43,7 +43,6 @@
  - また、pygameで時刻をcodeにあてはめているのが
  -'''
  -
- -
  -     display1.update_col(col=0, code=dt_now.hour // 10)
  -  で、それを、ドットで表示させる部分は、lcd_font.pg.pyにある
  -  ''' for y in range(7):
