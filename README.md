@@ -159,7 +159,9 @@ for y in range(7):
  -
  -  demo_03 _minecraft_v_new.py
  -  自由に文字を表示させる
- -  '''msg=(ord(disp_msg[i]))''' 
+ -  '''
+ -  msg=(ord(disp_msg[i]))
+ -  ''' 
 
 
 
