@@ -95,40 +95,4 @@
                             else :
                                 BLOCK =BLOCKOFF
                                 mc.setBlock(X, Y,Z,BLOCK)
-                    orizin-=9   
-
- 
-
-    
- 
-                    
-                        
- -                  
-
-
-           
-
-
-        
-        
-    
-   
-   
-   
-    
-    
-        
-    
-
-
-
- 
-
- 
-   
-
-  
-  
-   
- 
-  - 
+                    orizin-=9     
