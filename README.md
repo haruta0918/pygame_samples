@@ -41,18 +41,16 @@
  -![無題の動画 ‐ Clipchampで作成 (1)](https://github.com/user-attachments/assets/3ff12523-9cda-4a5e-912c-a066b8d0adf2)
  - pygameで表示していたものをminecrftでも表示させるために、minecraft_remote_itkidsからparam.MCJE.pyとmc(マイクラリモコン)の定義と、最低限のインポートを、マイクラリモコンで、ブロックを一つ置くものから取ってくる
  - また、pygameで時刻をcodeにあてはめているのが
- -'''
  -
- -     display1.update_col(col=0, code=dt_now.hour // 10)
+ -     'display1.update_col(col=0, code=dt_now.hour // 10)'
  -  で、それを、ドットで表示させる部分は、lcd_font.pg.pyにある
- -  '''
  -  
- -  　　　for y in range(7):
+ - 'for y in range(7):
             for x in range(5):
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     color = self.COLOR_ON
                 else:
-                    color = self.COLOR_OFF
+                    color = self.COLOR_OFF'
     
  -  でこれをマインクラフトで表示させるには、colorのところを、setblockにかえて、ブロック名と、座標にする(XYZの変数を作って、変化させることで、5×7を作る)
  -  またこれだと、ブロックが消えないので、elseのところにも同じものを作って、ブロックをparam.AIRにすると、いらないところだけ、消すことができる
@@ -61,16 +59,14 @@
  -  ただ、今のままだと表示する文字が数字のみなので、with open のところをオリジナルのひらがなファイルを作るか、LCDfontで使ったfont_txtに変え、時刻をcodeにしているところなどがいらない
  -  そのため、必要最低限の、インポート系、mc定義、setblockと一応postChatのところだけ残す
  -  このままだと、codeが何も指定されていないので、
- -  '''
- -  disp_msg = "2DJMV389"
+ -  'disp_msg = "2DJMV389"
  -  i = 0
  -  msg=(ord(disp_msg[i]))
- -  code = msg
+ -  code = msg'
  -  のように、文字をASCIIに変換して、それをcodeにすることで、マイクラでも表示したい文字が表示できる
  -  ただし、このままだと、codeに一番最初の文字しか、入らないので、
  -  最初にcount=1にして、繰り返す回数をcountにすることで、それぞれにあった、ASCIIのcodeになり、最終的に、
- -  '''
- -  Z=45
+ -  'Z=45
 Y=133
 X=50
 Yorizin=Y
@@ -97,7 +93,7 @@ for i in range (len(disp_msg)):
             else :
                 BLOCK =BLOCKOFF
                 mc.setBlock(X, Y,Z,BLOCK)
-     orizin-=9               
+     orizin-=9   '            
  
 
     
