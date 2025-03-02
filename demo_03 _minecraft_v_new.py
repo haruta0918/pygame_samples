@@ -55,9 +55,6 @@ for i in range (len(disp_msg)):
     for i in range(count):
         msg=(ord(disp_msg[i]))
     code = msg
-    print(Xorizin)
-    print(Yorizin)
-    print(Zorizin)
     Z=Zorizin
     X=Xorizin
     Y=Yorizin
