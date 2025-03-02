@@ -66,35 +66,7 @@
  -  のように、文字をASCIIに変換して、それをcodeにすることで、マイクラでも表示したい文字が表示できる
  -  ただし、このままだと、codeに一番最初の文字しか、入らないので、
  -  最初にcount=1にして、繰り返す回数をcountにすることで、それぞれにあった、ASCIIのcodeになり、最終的に、
-'
-Z=45
-Y=133
-X=50
-Yorizin=Y
-Zorizin=Z
-Xorizin=X
-BLOCKON=param.SMOOTH_QUATZ
-count=0
-for i in range (len(disp_msg)):
-    count+=1
-    for i in range(count):
-        msg=(ord(disp_msg[i]))
-    code = msg
-    Z=Zorizin
-    X=Xorizin
-    Y=Yorizin
-    for y in range(7):
-        Y-=1
-        Z=Zorizin
-        for x in range(5):
-            Z-=1
-            if LCD_font_styles[int(code*7+y)][x] == "1":
-                BLOCK = BLOCKON
-                mc.setBlock(X, Y,Z,BLOCK)
-            else :
-                BLOCK =BLOCKOFF
-                mc.setBlock(X, Y,Z,BLOCK)
-     orizin-=9   '   
+
  
 
     
