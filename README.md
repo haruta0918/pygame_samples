@@ -66,7 +66,7 @@
  -  のように、文字をASCIIに変換して、それをcodeにすることで、マイクラでも表示したい文字が表示できる
  -  ただし、このままだと、codeに一番最初の文字しか、入らないので、
  -  最初にcount=1にして、繰り返す回数をcountにすることで、それぞれにあった、ASCIIのcodeになり、最終的に、
- -  '''
+'
 Z=45
 Y=133
 X=50
@@ -94,7 +94,7 @@ for i in range (len(disp_msg)):
             else :
                 BLOCK =BLOCKOFF
                 mc.setBlock(X, Y,Z,BLOCK)
-     orizin-=9   '''            
+     orizin-=9   '   
  
 
     
