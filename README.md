@@ -38,7 +38,7 @@
  - 表示するときのフォントのttfファイルを参照をしたりするファイル
  - ＜demo_LCD_font.pyやdemo_03.pyのマインクラフトでの表示＞
  - 時計バージョン(demo_03_minecraft.py)
- - ![無題の動画 ‐ Clipchampで作成](https://github.com/user-attachments/assets/faab16d7-5630-4983-91f1-8065472dc930)
+ -![無題の動画 ‐ Clipchampで作成 (1)](https://github.com/user-attachments/assets/3ff12523-9cda-4a5e-912c-a066b8d0adf2)
  - pygameで表示していたものをminecrftでも表示させるために、minecraft_remote_itkidsからparam.MCJE.pyとmc(マイクラリモコン)の定義と、最低限のインポートを、マイクラリモコンで、ブロックを一つ置くものから取ってくる
  - また、pygameで時刻をcodeにあてはめているのが
  -'''
