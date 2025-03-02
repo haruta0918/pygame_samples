@@ -46,12 +46,14 @@
  -     display1.update_col(col=0, code=dt_now.hour // 10)
  -  で、それを、ドットで表示させる部分は、lcd_font.pg.pyにある
  -  '''
-    for y in range(7):
+
+ -  for y in range(7):
             for x in range(5):
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     color = self.COLOR_ON
                 else:
                     color = self.COLOR_OFF
+    
  -  でこれをマインクラフトで表示させるには、colorのところを、setblockにかえて、ブロック名と、座標にする(XYZの変数を作って、変化させることで、5×7を作る)
  -  またこれだと、ブロックが消えないので、elseのところにも同じものを作って、ブロックをparam.AIRにすると、いらないところだけ、消すことができる
  -  文字バージョン(demo_03 _minecraft_v_new.py)
