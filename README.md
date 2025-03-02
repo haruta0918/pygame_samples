@@ -42,7 +42,9 @@
  - pygameで表示していたものをminecrftでも表示させるために、minecraft_remote_itkidsからparam.MCJE.pyとmc(マイクラリモコン)の定義と、最低限のインポートを、マイクラリモコンで、ブロックを一つ置くものから取ってくる
  - また、pygameで時刻をcodeにあてはめているのが
  -'''
- -   display1.update_col(col=0, code=dt_now.hour // 10)
+ -
+ -
+ -     display1.update_col(col=0, code=dt_now.hour // 10)
  -  で、それを、ドットで表示させる部分は、lcd_font.pg.pyにある
  -  ''' for y in range(7):
             for x in range(5):
