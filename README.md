@@ -61,7 +61,7 @@
  -  そのため、必要最低限の、インポート系、mc定義、setblockと一応postChatのところだけ残す
  -  このままだと、codeが何も指定されていないので、
  
- -              disp_msg = "2DJMV389"
+ -             disp_msg = "2DJMV389"
                i = 0
                msg=(ord(disp_msg[i]))
                code = msg
