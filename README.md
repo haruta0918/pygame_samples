@@ -47,7 +47,7 @@
  -  で、それを、ドットで表示させる部分は、lcd_font.pg.pyにある
  -  '''
  -  
- -  for y in range(7):
+ -  　　　for y in range(7):
             for x in range(5):
                 if LCD_font_styles[int(code*7+y)][x] == "1":
                     color = self.COLOR_ON
