@@ -50,7 +50,7 @@
                                     if LCD_font_styles[int(code*7+y)][x] == "1":
                                         color = self.COLOR_ON
                                     else:
-                                        color = self.COLOR_OFF'
+                                        color = self.COLOR_OFF
     
  -  でこれをマインクラフトで表示させるには、colorのところを、setblockにかえて、ブロック名と、座標にする(XYZの変数を作って、変化させることで、5×7を作る)
  -  またこれだと、ブロックが消えないので、elseのところにも同じものを作って、ブロックをparam.AIRにすると、いらないところだけ、消すことができる
