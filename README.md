@@ -159,7 +159,9 @@ for y in range(7):
  -
  -  demo_03 _minecraft_v_new.py
  -  自由に文字を表示させる
- -  ![Uploading 2025-03-02_08.56.09.png…]()
+ -
+ -   ![Uploading 2025-03-02_08.56.09.png…]()
+ -   
 
  -  '''
  -  msg=(ord(disp_msg[i]))
