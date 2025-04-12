@@ -14,7 +14,7 @@ import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
 with open("fonts/font.txt", encoding="utf-8") as f:
         LCD_font_styles = f.read().split('\n')
-disp_msg = "2DJMV389"
+disp_msg = "Hello"
 i = 0
         
 
@@ -43,7 +43,7 @@ else:
     mc.postToChat('kadai #ラスト  文字表示')
 lcd1 = LCD_font(mc)
 Z=45
-Y=133
+Y=133  
 X=50
 Yorizin=Y
 Zorizin=Z

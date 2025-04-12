@@ -62,7 +62,7 @@ for y in range(9):
             for x in range(49):
                 Z+=1
                 mc.setBlock(48, Y,Z,param.SMOOTH_QUATZ) 
-
+param.ODSIDIAN
 Z=-25
 Y=149
 for y in range(11):
